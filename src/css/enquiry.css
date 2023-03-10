@@ -1,0 +1,46 @@
+form
+{
+    border: 1px solid gray;
+    padding:1rem 2rem;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+input,input:focus,textarea,textarea:focus
+{
+    border: none !important;
+    outline: none;
+    background-color: #f7f7f7!important;
+    box-shadow: none !important;
+    height: 3.375rem;
+}
+input:focus ,textarea:focus
+{
+    border-bottom: 1px solid green !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+textarea
+{
+    height: 9rem;
+    resize: none;
+}
+
+
+@media (max-width:768px) {
+
+    h4 
+    {
+        font-size: 20px;
+    }
+
+    input,textarea,form button 
+    {
+        font-size: 14px !important;
+        height: 2.375rem;
+    }   
+    input::placeholder,textarea::placeholder
+    {
+        font-size: 14px !important;
+    }
+
+}

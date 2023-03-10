@@ -1,0 +1,175 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: greenyellow;
+    margin-top: 1px;
+}
+
+.carausel-img {
+    height: 40rem;
+    width: 100%
+}
+
+.carousel-heading {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+@import "https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Josefin+Sans:wght@500&display=swap";
+
+.carousel-data {
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.carousel-data p {
+    font-size: 1rem;
+    text-shadow: 0 0 15px #000000;
+}
+
+.carousel-data h1 {
+    font-family: 'Dongle', sans-serif !important;
+    font-size: 4.5rem;
+    text-shadow: 0 0 15px #000000;
+    text-transform: uppercase;
+}
+
+.btn-contact-carousel {
+    /* height: 3rem; */
+    /* width: 8rem; */
+    border-radius: 5rem;
+    border: 2px solid #0b94d6;
+    background-color: #4e6570;
+    color: white;
+    font-size: small;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    transition: all 1s;
+    padding: 10px;
+    text-decoration: none;
+    margin: 3rem 0 !important;
+}
+
+.btn-contact-carousel:hover {
+    background-color: transparent;
+    color: #0b94d6;
+    font-weight: bold;
+}
+.carousel-indicators button
+    {
+        border-radius: 50%;
+        height: 10px !important;
+        width: 10px !important;
+    }
+/* carouder END */
+
+
+.nav-link {
+    font-size: 25px !important;
+    margin: 0px 15px;
+    font-weight: 600;
+}
+
+/* .nav-link:hover
+{
+   color: black;
+    border-radius: 5px;
+    text-decoration: none;
+} */
+
+.dropdown-menu:hover>li {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.enquiry {
+    animation: showEffect 1s ease-in-out infinite;
+    color: blue;
+}
+
+
+@keyframes showEffect
+{
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    .topbar {
+        font-size: small;
+        box-sizing: border-box;
+        display: none !important;
+    }
+
+    .carousel-data {
+        margin-bottom: 1rem;
+    }
+    .carousel-data p 
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .carousel-indicators button
+    {
+        border-radius: 50%;
+        height: 7px !important;
+        width: 7px !important;
+    }
+    .carausel-img {
+        height: 20rem;
+        width: 100%
+    }
+.main-carousel
+{
+    z-index: -1;
+}
+    .carousel-data h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .carousel-data p {
+        font-size: .7rem !important;
+    }
+    
+
+    .btn-contact-carousel {
+        height: 1.5rem;
+        width: 7rem;
+        border-radius: 3rem;
+        border: 1px solid #0b94d6;
+        background-color: #4e6570;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        margin: 2rem 0;
+        font-size: x-small !important;
+        transition: all 1s;
+    }
+    
+        .btn-contact-carousel:hover
+         {
+            background-color: transparent;
+            color: #0b94d6;
+            font-weight: bold;
+        }
+        .carousel-data {
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 2rem;
+        }
+    
+}
